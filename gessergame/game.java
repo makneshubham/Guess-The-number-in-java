@@ -47,13 +47,32 @@ class umpier{
     
    void comper(){
 	   if(numFormGessuer==playernum1) {
+		   if(numFormGessuer==playernum1 && numFormGessuer==playernum2) {
+			   System.out.println("The wean of a game is player 1st and 2sed ");
+		   }
+		   else if(numFormGessuer==playernum1 && numFormGessuer==playernum3) {
+			   System.out.println("The wean of a game is 1st and 3th ");
+		   }
+		   else {
 		   System.out.println("The player 1st is weean");
+		   }
 	   }
 	   else if(numFormGessuer==playernum2) {
+		   if(numFormGessuer==playernum2&&numFormGessuer==playernum3) {
+		     System.out.println("The player 2sed and 3 sed ");
+		   }
+		   else {
 		   System.out.println("The player 2sed is weean");
+		   }
+   
 	   }
 	   else if(numFormGessuer==playernum3) {
+		   if(numFormGessuer==playernum1&&numFormGessuer==playernum2&&numFormGessuer==playernum3) {
+			   System.out.println("The weener is all member !");
+		   }
+		   else {
 		   System.out.println("The player 3th is ween ");
+		   }
 	   }
 	   else {
 		   System.out.println("The number not gess! , loss of game ");
